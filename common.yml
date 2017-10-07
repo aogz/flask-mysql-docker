@@ -1,0 +1,4 @@
+db:
+  image: mysql
+web:
+  build: .

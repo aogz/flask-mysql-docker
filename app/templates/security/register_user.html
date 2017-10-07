@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Register{% endblock %}
+
+{% block breadcrumb %}
+      <span class="breadcrumb-item active">Register</span>
+{% endblock %}
+
+
+{% block content %}
+
+    <div class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"> </div>
+                <div class="col-md-6">
+                    <div class="card text-white p-5 bg-primary">
+                        <div class="card-body">
+                            <h1 class="mb-4">Register</h1>
+                            {{ wtf.quick_form(register_user_form) }}
+                            <p class="mt-2">
+                                <a href="/login" class="text-white">Already have an account? Login!</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

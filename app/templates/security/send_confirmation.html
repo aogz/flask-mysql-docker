@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+
+    <div class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"> </div>
+                <div class="col-md-6">
+                    <div class="card text-white p-5 bg-primary">
+                        <div class="card-body">
+                            <h1 class="mb-4">Send confirmation</h1>
+                            {{ wtf.quick_form(send_confirmation_form) }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
