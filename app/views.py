@@ -10,3 +10,9 @@ def main():
         return render_template('main/profile.html')
     else:
         return render_template('main/landing.html')
+
+
+@app.route('/settings')
+def settings():
+    return render_template('main/settings.html')
+
